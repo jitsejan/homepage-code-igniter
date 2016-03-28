@@ -55,6 +55,7 @@
             		<h4 class="entry-title"><?php echo $website['title'];?></h4>
 		            <img class="web-img" src="<?php echo $website['image'];?>" width="200">
 		            <p><?php echo $website['description'];?></p>
+    				<?php echo ($website['link'] ? '<p><a target="new" href="'.$website['link'].'">'.$website['link'].'</a></p>': '');?>
             	</div>
     	    </article>
     	<?php if($index % 2 == 1): ?>
