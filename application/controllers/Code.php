@@ -12,6 +12,8 @@ class Code extends CI_Controller {
   {
     $data['title'] = 'Code';
 
+    $data['snippets'] = $this->code_model->get_snippets();
+
     $this->load->view('templates/header', $data);
     $this->load->view('code/index', $data);
     $this->load->view('templates/footer');

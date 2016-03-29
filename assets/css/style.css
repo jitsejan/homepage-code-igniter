@@ -4,7 +4,10 @@ body, html{
 	font-family: "Raleway";
 	color: rgb(40,40,40);
 }
-
+xmp{
+    border: 1px solid black;
+    padding: 5px;
+}
 hr{
 	background-image: linear-gradient(to right, rgba(102, 153, 255, 0), rgba(102, 153, 255, 0.75), rgba(102, 153, 255, 0));
 	border: 0 none;
@@ -100,5 +103,7 @@ header.affix{
 }
 
 footer{
-    margin-top: 50px;    
+    margin-top: 150px;
+    font-size: small;
+    color: rgb(200, 200, 200);
 }
