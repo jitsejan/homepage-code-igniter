@@ -43,7 +43,7 @@
             <div class="row">
                 <?php if($index % 2 == 0): ?>
 		        <div class="thumbnail col-lg-4 col-md-4 col-sm-4">
-	                <img src="<?php echo $project['image'];?>" class="img-responsive" alt="" >
+	                <img src="<?php echo base_url($project['image']);?>" class="img-responsive" alt="" >
                 </div>
                 <?php endif; ?>
 		        <div class="col-md-8 col-lg-8 col-sm-8">
@@ -52,7 +52,7 @@
                 </div>
                 <?php if($index % 2 == 1): ?>
 		        <div class="thumbnail col-lg-4 col-md-4 col-sm-4">
-	                <img src="<?php echo $project['image'];?>" class="img-responsive" alt="" >
+	                <img src="<?php echo base_url($project['image']);?>" class="img-responsive" alt="" >
                 </div>
                 <?php endif; ?>
 		    </div>
@@ -75,7 +75,7 @@
             <article>
             	<div class="col-sm-6 col-xs-12 col-md-6">
             		<h4 class="entry-title"><?php echo $website['title'];?></h4>
-		            <img class="web-img" src="<?php echo $website['image'];?>" width="200">
+		            <img class="web-img" src="<?php echo base_url($website['image']);?>" width="200">
 		            <p><?php echo $website['description'];?></p>
     				<?php echo ($website['link'] ? '<p><a target="new" href="'.$website['link'].'">'.$website['link'].'</a></p>': '');?>
             	</div>
