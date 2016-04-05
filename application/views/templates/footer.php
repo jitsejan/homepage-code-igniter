@@ -1,4 +1,3 @@
-		</div><!-- container !-->
 		<footer>
             <div id="inner-footer" class="vertical-nav">
                 <div class="container">
@@ -20,5 +19,24 @@
                 </div>
             </div>
         </footer>
+		<script type="text/javascript" language="javascript" src="<?php echo base_url('assets/js/jquery-2.2.0.min.js');?>"></script>
+		<script type="text/javascript" language="javascript" src="<?php echo base_url('assets/js/jquery-ui.js');?>"></script>
+		<script type="text/javascript" language="javascript" src="<?php echo base_url('assets/js/jquery.mobile.custom.min.js');?>"></script>
+		<script type="text/javascript" language="javascript" src="<?php echo base_url('assets/js/jquery.swipebox.js');?>"></script>
+		<script type="text/javascript" language="javascript" src="<?php echo base_url('assets/js/toc.js');?>"></script>
+		<script type="text/javascript" language="javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			$( document ).ready(function() {
+				$( '.swipebox' ).swipebox();
+				
+				$('#subnav').affix({
+					offset: {
+					top: $('#subnav').offset().top,
+					bottom: $('footer').outerHeight(true) + $('.application').outerHeight(true) + 40
+					}
+				});
+				
+			});
+		</script>
 	</body>
 </html>

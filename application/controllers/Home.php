@@ -4,6 +4,7 @@ class Home extends CI_Controller {
   public function __construct()
   {
     parent::__construct();
+    $this->load->model('slide_model');
     $this->load->model('project_model');
     $this->load->model('website_model');
   }
@@ -12,6 +13,7 @@ class Home extends CI_Controller {
   {
     $data['title'] = 'Home';
     
+    $data['slides'] = $this->slide_model->get_slides();
     $data['projects'] = $this->project_model->get_projects();
     $data['websites'] = $this->website_model->get_websites();
     

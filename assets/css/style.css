@@ -1,4 +1,4 @@
-@import url('http://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 body, html{
 	height: 100%;
 	font-family: "Raleway";
@@ -7,6 +7,7 @@ body, html{
 xmp{
     border: 1px solid black;
     padding: 5px;
+    font-size: small;
 }
 hr{
 	background-image: linear-gradient(to right, rgba(102, 153, 255, 0), rgba(102, 153, 255, 0.75), rgba(102, 153, 255, 0));
@@ -106,4 +107,453 @@ footer{
     margin-top: 150px;
     font-size: small;
     color: rgb(200, 200, 200);
+}
+
+
+
+
+
+.subnav {
+  /*background: lightgray;*/
+}
+
+.subnav a {
+  color: black;
+  /*font-style: italic;*/
+}
+
+.subnav li a:hover,
+.subnav li a:focus {
+  background: black;
+  color: white;
+}
+
+.subnav .active {
+  font-weight: bold;
+  color: white;
+}
+
+.subnav .subnav {
+  display: none;
+}
+
+.subnav .active .subnav {
+  display: block;
+}
+
+.subnav .subnav a {
+  font-weight: normal;
+  font-size: .85em;
+}
+
+.subnav .subnav span {
+  margin: 0 5px 0 2px;
+}
+
+.subnav .subnav .active a,
+.subnav .subnav .active:hover a,
+.subnav .subnav .active:focus a {
+  font-weight: bold;
+  padding-left: 30px;
+  border-left: 5px solid black;
+}
+
+.subnav .subnav .active span,
+.subnav .subnav .active:hover span,
+.subnav .subnav .active:focus span {
+  display: none;
+}
+
+.application {
+  border-top: 1px solid #c1e1ec;
+}
+
+#subnavigation .affix-top .jumbotron .affix-top {
+  position: relative;
+}
+
+#subnavigation .affix,
+#subnavigation .affix-bottom {
+    width: 241px;
+    top: 80px;
+    background-color: white;
+    z-index: 1000;
+}
+
+
+#subnavigation .affix-bottom {
+  position: absolute;
+}
+
+@media (min-width:1200px) {
+  #subnavigation .affix,
+  #subnavigation .affix-bottom {
+    width: 241px;
+  }
+}
+
+ul.nodot{
+  list-style: none;
+}
+.no-padding{
+  margin: 0px !important;
+  padding: 0px !important;
+}
+.prettyprint ol.linenums > li { list-style-type: decimal; }
+
+span.cmd-dir{
+  display: inline;
+  color: lightblue;
+  font-weight: bold;
+}
+p[class^="command-"]{
+  font-size: 0.8em;
+  background-color: black;
+  color: white;
+  border-color: green;
+  width: 99%;
+  margin: 10px auto 10px auto;
+  padding: 5px;
+  font-family: Consolas, monaco, monospace;
+  -moz-box-shadow: inset 0px 0px 2px #888888;
+  -webkit-box-shadow: inset 0px 0px 2px #888888;
+  box-shadow: inset 0px 0px 2px #888888;
+}
+p.command-lnx:before{
+  padding-left: 5px;
+  content: 'jitsejan@linux ';
+  color: lightgreen;
+}
+p.command-mb:before{
+  padding-left: 5px;
+  content: 'jitsejan@macbook ';
+  color: lightblue;
+  font-weight:bold;
+}
+code, xmp{
+  color: blue;
+}
+ a {
+  color: black;
+  /*font-style: italic;*/
+}
+
+.subnav li a:hover,
+.subnav li a:focus {
+  background: black;
+  color: white;
+}
+
+.subnav .active {
+  font-weight: bold;
+  color: white;
+}
+
+.subnav .subnav {
+  display: none;
+}
+
+.subnav .active .subnav {
+  display: block;
+}
+
+.subnav .subnav a {
+  font-weight: normal;
+  font-size: .85em;
+}
+
+.subnav .subnav span {
+  margin: 0 5px 0 2px;
+}
+
+.subnav .subnav .active a,
+.subnav .subnav .active:hover a,
+.subnav .subnav .active:focus a {
+  font-weight: bold;
+  padding-left: 30px;
+  border-left: 5px solid black;
+}
+
+.subnav .subnav .active span,
+.subnav .subnav .active:hover span,
+.subnav .subnav .active:focus span {
+  display: none;
+}
+
+.application {
+  border-top: 1px solid #c1e1ec;
+}
+
+#subnavigation .affix-top .jumbotron .affix-top {
+  position: relative;
+}
+
+#subnav .affix,
+#subnav .affix-bottom {
+    width: 241px;
+    top: 20px;
+    background-color: white;
+    z-index: 1000;
+}
+
+.jumbotron .affix,.jumbotron .affix-bottom {
+  width: 100%;
+  background-color: lightgrey;
+  top:0px;
+  left: 0px;
+}
+.jumbotron .affix h3{
+  display: none;
+
+}
+#subnavigation .affix-bottom {
+  position: absolute;
+}
+
+@media (min-width:1200px) {
+  #subnavigation .affix,
+  #subnavigation .affix-bottom {
+    width: 241px;
+  }
+}
+
+ul.nodot, ul.subnav{
+  list-style: none;
+}
+.no-padding{
+  margin: 0px !important;
+  padding: 0px !important;
+}
+.prettyprint ol.linenums > li { list-style-type: decimal; }
+
+span.cmd-dir{
+  display: inline;
+  color: lightblue;
+  font-weight: bold;
+}
+p[class^="command-"]{
+  font-size: 0.8em;
+  background-color: black;
+  color: white;
+  border-color: green;
+  width: 99%;
+  margin: 10px auto 10px auto;
+  padding: 5px;
+  font-family: Consolas, monaco, monospace;
+  -moz-box-shadow: inset 0px 0px 2px #888888;
+  -webkit-box-shadow: inset 0px 0px 2px #888888;
+  box-shadow: inset 0px 0px 2px #888888;
+}
+p.command-lnx:before{
+  padding-left: 5px;
+  content: 'jitsejan@linux ';
+  color: lightgreen;
+}
+p.command-mb:before{
+  padding-left: 5px;
+  content: 'jitsejan@macbook ';
+  color: lightblue;
+  font-weight:bold;
+}
+code, xmp{
+  color: blue;
+}
+
+.tutorial-container{
+ margin-top: 0px;   
+}
+.tutorial-container h1{
+  padding-top: 55px; 
+  margin-top: -55px;
+}
+
+
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+
+/*
+  Bootstrap Carousel Fade Transition (for Bootstrap 3.3.x)
+  CSS from:       http://codepen.io/transportedman/pen/NPWRGq
+  and:            http://stackoverflow.com/questions/18548731/bootstrap-3-carousel-fading-to-new-slide-instead-of-sliding-to-new-slide
+  Inspired from:  http://codepen.io/Rowno/pen/Afykb 
+*/
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/*
+  WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+  Need to override the 3.3 new styles for modern browsers & apply opacity
+*/
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+}	
+/* Overrule bootstrap css */
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+}
+.carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto;
+    color: rgb(100,100,100);
+    font-style: italic;
+    text-shadow: none;
+}
+
+
+#photos{
+	width: 100%;
+}
+#photos ul {
+  list-style-type: none;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+ 
+#photos li {
+  float: left;
+  position: relative;
+  overflow: hidden;
+  margin: 1px;
+}
+
+#photos li{
+	width: 19%;
+  	height: 187px;
+}
+ 
+#photos li:hover {
+  cursor: pointer;
+}
+
+#photos li img{
+	width: auto !important;
+	height: 100% !important;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+#photos li p {
+  color: transparent;
+  background: transparent;
+/*   font: 50 30px/187px 'Arvo', Helvetica, Arial, sans-serif; */
+  text-align: center;
+/*   text-transform: uppercase; */
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  width: 100%;
+  height: 100%; 
+ 
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+ 
+#photos li:hover p {
+  color: white;
+  background: #000; /*fallback for old browsers*/
+  background: rgba(0,0,0,0.7);
+}
+
+#photos li div{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+#photos li div.div-photoset{
+	background-color: rgb(50,50,50);
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 20px;
+	cursor: auto;
+}
+@media screen and (max-width: 1120px) {
+	#photos li{
+		width: 24%;
+		height: 150px;
+	}
+}
+ 
+@media screen and (max-width: 840px) {
+  #photos li{
+  	width: 32%;
+  	height: 150px;
+  }
+}
+ 
+@media screen and (max-width: 560px) {
+  #photos li {
+  	width: 49%;
+  	height: 150px;
+  }
+  
+}
+@media screen and (max-width: 400px) {
+	#photos li {
+		font-size: x-small;
+	  }
 }

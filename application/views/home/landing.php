@@ -1,3 +1,25 @@
+<div class="container-fluid">
+	<div id="frontcarousel" class="row carousel slide carousel-fade" data-ride="carousel">
+        <?php if(isset($slides)): ?>    
+        <div class="carousel-inner" role="listbox">
+        <?php foreach($slides as $index => $slide): ?>
+            <div class="item <?php if($index == 0) echo ' active'; ?>">
+			    <img src="<?php echo base_url($slide['imageurl']);?>" title="<?php echo $slide['title'];?>" alt="<?php echo $slide['title'];?>"/>
+			    <div class="carousel-caption"><?php echo $slide['title'];?></div>
+			</div><!-- /item !-->
+        <?php endforeach; ?>
+        </div><!-- /carousel-innner !-->
+        <a class="left carousel-control" href="#frontcarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#frontcarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        <?php endif; ?>
+	</div> <!-- /frontcarousel !-->
+</div> <!-- /container-fluid -->
 <div class="container">
     <div class="row" id="social-block">
     	<center>

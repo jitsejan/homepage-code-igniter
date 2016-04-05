@@ -1,3 +1,4 @@
+<div class="container">
 <section>
   <div class="row page-header">
       <h1><?php echo $title; ?></h1>
@@ -15,4 +16,5 @@
     <?php endif; ?>
   </div>
 </section>
+</div><!-- /container !-->
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
