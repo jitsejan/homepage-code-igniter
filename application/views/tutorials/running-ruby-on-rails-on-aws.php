@@ -240,6 +240,15 @@ end</pre>
           </ol>
         </li>
         </ol>
+        <h1 id="fileaccess">File access (Mac)</h1>
+        Do the following on OS X to make it more convenient modifying and browsing the files:
+        <ol>
+          <li>Install <a href="https://osxfuse.github.io">Fuse for OS X</a></li>
+          <li>Install <a href="https://github.com/osxfuse/sshfs/releases/download/osxfuse-sshfs-2.5.0/sshfs-2.5.0.pkg">SSHFS</a> (2.5.0 at the time of writing)</li>
+          <li><p class="command-mb"><span class="cmd-dir">~/</span> $ mkdir ~/AWSdrive</p></li>
+          <li><p class="command-mb"><span class="cmd-dir">~/</span> $ sshfs ubuntu@ec2-xx-xx-xx-xx.eu-central-1.compute.amazonaws.com:/home/ubuntu/ ~/AWSdrive/ -oauto_cache,reconnect,defer_permissions,noappledouble,negative_vncache</p></li>
+          <li>Fill in your password and the drive will be mounted</li>
+        </ol>
         To be continued...
      </article>
      </div>
@@ -250,9 +259,6 @@ end</pre>
     window.parent.postMessage("resize", "*");
   }
     </script>
-		
+
 
   </body>
-
-  
-  
